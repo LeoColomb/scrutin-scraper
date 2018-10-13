@@ -8,7 +8,7 @@ const flags = {
 }
 
 test('main', async t => {
-  const {stdout} = await execa('./cli.js', [
+  const { stdout } = await execa('./cli.js', [
     '-l',
     flags.legislature,
     '-s',

@@ -10,7 +10,7 @@ test('main', async t => {
   t.deepEqual(fixture[5], {
     fullName: 'Delphine Bagarry',
     name: 'Bagarry',
-    vote: 'Pour',
+    vote: 'Pour'
   })
 })
 
@@ -24,7 +24,7 @@ test('filter', async t => {
   t.deepEqual(fixture[5], {
     fullName: 'Claude Goasguen',
     name: 'Goasguen',
-    vote: 'Contre',
+    vote: 'Contre'
   })
 })
 

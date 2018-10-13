@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 const fetch = require('node-fetch')
 const cheerio = require('cheerio')
 
@@ -33,12 +33,11 @@ const scrutScrap = (opts) => {
       })
 
       if (scrutin.length === 0) {
-        return Promise.reject('No data')
+        throw new Error('No data')
       }
 
       return scrutin
     })
-    .catch(err => {throw new Error('Error fetching data')})
 }
 
 module.exports = scrutScrap

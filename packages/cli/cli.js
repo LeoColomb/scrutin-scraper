@@ -2,20 +2,20 @@
 'use strict'
 const meow = require('meow')
 const scrutScrap = require('scrutin-scraper')
-const Table = require('cli-table');
+const Table = require('cli-table')
 
 const cli = meow(`
-	Usage
-	  $ scrutin-scraper
+  Usage
+    $ scrutin-scraper
 
-	Options
-	  --legislature, -l  Target legislature. eg: 15  [Required]
-	  --scrutin, -s   Target scrutin. eg: 1116  [Required]
-	  --voteTypes, -v   Vote types. Contre,Pour,Non-votants  [Default: all]
-	  --format, -f   Output format. json,standard,pretty  [Default: standard]
+  Options
+    --legislature, -l  Target legislature. eg: 15  [Required]
+    --scrutin, -s   Target scrutin. eg: 1116  [Required]
+    --voteTypes, -v   Vote types. Contre,Pour,Non-votants  [Default: all]
+    --format, -f   Output format. json,standard,pretty  [Default: standard]
 
-	Example
-	  $ scrutin-scraper --legislature=15 --scrutin=1116
+  Example
+    $ scrutin-scraper --legislature=15 --scrutin=1116
 `, {
   flags: {
     legislature: {

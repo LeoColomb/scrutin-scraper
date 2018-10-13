@@ -7,13 +7,15 @@
   "repository": "https://github.com/LeoColomb/scrutin-scraper/tree/master/packages/lib",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "lint": "standard"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "node-fetch": "^2.2.0"
   },
   "devDependencies": {
-    "ava": "^1.0.0-beta.8"
+    "ava": "^1.0.0-beta.8",
+    "standard": "^12.0.1"
   }
 }
