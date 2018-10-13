@@ -1,16 +1,19 @@
-# scrutin-scraper-cli
+# Scrutin Scraper CLI
+
+> Scrapping Assemblée Nationale scrutin
+
+_CLI for [Scrutin Scraper](https://github.com/LeoColomb/scrutin-scraper)_
 
 ## Install
 
+```bash
+$ npm install --global scrutin-scraper-cli
 ```
-$ npm install --global scrutin-scrapper-cli
-```
-
 
 ## Usage
 
-```
-$ scrutin-scrapper --help
+```bash
+$ scrutin-scraper --help
 
   Usage
     $ scrutin-scraper
