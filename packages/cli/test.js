@@ -1,6 +1,6 @@
 import test from 'ava'
 import execa from 'execa'
-import scrutScrap from 'scrutin-scraper-lib'
+import scrutScrap from 'scrutin-scraper'
 
 const flags = {
   legislature: 15,

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 const meow = require('meow')
-const scrutScrap = require('scrutin-scraper-lib')
+const scrutScrap = require('scrutin-scraper')
 const Table = require('cli-table');
 
 const cli = meow(`
