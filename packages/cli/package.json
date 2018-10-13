@@ -1,6 +1,6 @@
 {
   "name": "scrutin-scraper-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Scrapping Assemblée Nationale scrutin.",
   "author": "Léo Colombaro <git@colombaro.fr>",
   "license": "ISC",
@@ -15,7 +15,7 @@
   "dependencies": {
     "cli-table": "^0.3.1",
     "meow": "^5.0.0",
-    "scrutin-scraper": "^1.0.1"
+    "scrutin-scraper": "^1.0.2"
   },
   "devDependencies": {
     "ava": "^1.0.0-beta.8",
