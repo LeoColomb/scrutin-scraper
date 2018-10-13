@@ -15,15 +15,21 @@ $ npm install scrutin-scraper
 ```javascript
 const scrutScrap = require('scrutin-scraper')
 
-const scrutin = scrutScrap({
+const scrutin = await scrutScrap({
   legislature: 15,
-  scrutin: 1116
+  scrutin: 1116,
+  voteTypes: ['Pour', 'Contre', 'Non-votants']
 })
+
+console.log(scrutin)
 // => [{
 //        name: 'Dupond',
 //        fullName: 'Jean Dupond',
 //        vote: 'Pour'
 //     }, ...]
+
+console.log(JSON.stringify(scrutin))
+// => JSON data
 ```
 
 ## License
