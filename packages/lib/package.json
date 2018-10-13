@@ -1,6 +1,6 @@
 {
   "name": "scrutin-scraper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scrapping Assemblée Nationale scrutin.",
   "author": "Léo Colombaro <git@colombaro.fr>",
   "license": "ISC",
