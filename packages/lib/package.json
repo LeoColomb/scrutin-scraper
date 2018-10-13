@@ -4,6 +4,7 @@
   "description": "Scrapping Assemblée Nationale scrutin.",
   "author": "Léo Colombaro <git@colombaro.fr>",
   "license": "ISC",
+  "repository": "https://github.com/LeoColomb/scrutin-scraper/tree/master/packages/lib",
   "main": "index.js",
   "scripts": {
     "test": "ava"
