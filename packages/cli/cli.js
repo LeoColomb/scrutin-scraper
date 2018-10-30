@@ -3,6 +3,7 @@
 const meow = require('meow')
 const scrutScrap = require('scrutin-scraper')
 const Table = require('cli-table')
+const CSV = require('csv-stringify')
 
 const cli = meow(`
   Usage
@@ -12,7 +13,7 @@ const cli = meow(`
     --legislature, -l  Target legislature. eg: 15  [Required]
     --scrutin, -s   Target scrutin. eg: 1116  [Required]
     --voteTypes, -v   Vote types. Contre,Pour,Non-votants  [Default: all]
-    --format, -f   Output format. json,standard,pretty  [Default: standard]
+    --format, -f   Output format. json,csv,standard,pretty  [Default: standard]
 
   Example
     $ scrutin-scraper --legislature=15 --scrutin=1116
@@ -50,6 +51,8 @@ if (!cli.flags.legislature || !cli.flags.scrutin) {
         console.log(table.toString())
       } else if (cli.flags.format === 'json') {
         console.log(JSON.stringify(data))
+      } else if (cli.flags.format === 'csv') {
+        CSV(scrutin, {header: true}, (err, output) => console.log(output))
       } else {
         console.log(data)
       }
