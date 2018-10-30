@@ -31,8 +31,8 @@ console.log(scrutin)
 console.log(JSON.stringify(scrutin))
 // => JSON data
 
-var csvStringify = require('csv-stringify')
-csvStringify(scrutin, { header: true }, (err, output) => console.log(output))
+const CSV = require('csv-stringify')
+CSV(scrutin, { header: true }, (err, output) => console.log(output))
 // => CSV data
 ```
 
