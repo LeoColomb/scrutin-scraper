@@ -22,7 +22,7 @@ $ scrutin-scraper --help
     --legislature, -l  Target legislature. eg: 15  [Required]
     --scrutin, -s   Target scrutin. eg: 1116  [Required]
     --voteTypes, -v   Vote types. Contre,Pour,Non-votants  [Default: all]
-    --format, -f   Output format. json,standard,pretty  [Default: standard]
+    --format, -f   Output format. json,csv,standard,pretty  [Default: standard]
 
   Example
     $ scrutin-scraper --legislature=15 --scrutin=1116

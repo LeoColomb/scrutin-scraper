@@ -1,7 +1,7 @@
 {
   "name": "scrutin-scraper",
   "version": "1.0.2",
-  "description": "Scrapping Assemblée Nationale scrutin.",
+  "description": "Scraping French Assemblée Nationale voting results",
   "author": "Léo Colombaro <git@colombaro.fr>",
   "license": "ISC",
   "repository": "https://github.com/LeoColomb/scrutin-scraper/tree/master/packages/lib",

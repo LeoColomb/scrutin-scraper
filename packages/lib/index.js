@@ -13,7 +13,7 @@ const scrutScrap = (opts) => {
     throw new Error('Bad options')
   }
 
-  return fetch(`https://secure2.assemblee-nationale.fr/scrutins/detail/(legislature)/${options.legislature}/(num)/${options.scrutin}`)
+  return fetch(`https://secure2.assemblee-nationale.fr/scrutins/detail/(legislature)/${options.legislature}/(num)/${options.scrutin}`, { mode: 'no-cors' })
     .then(res => res.text())
     .then(html => {
       const $ = cheerio.load(html)

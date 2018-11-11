@@ -52,7 +52,7 @@ if (!cli.flags.legislature || !cli.flags.scrutin) {
       } else if (cli.flags.format === 'json') {
         console.log(JSON.stringify(data))
       } else if (cli.flags.format === 'csv') {
-        CSV(scrutin, {header: true}, (err, output) => console.log(output))
+        CSV(data, { header: true }, (err, output) => console.log(output || err))
       } else {
         console.log(data)
       }

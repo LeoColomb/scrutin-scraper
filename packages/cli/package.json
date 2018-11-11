@@ -1,7 +1,7 @@
 {
   "name": "scrutin-scraper-cli",
   "version": "1.0.2",
-  "description": "Scrapping Assemblée Nationale scrutin.",
+  "description": "Scraping French Assemblée Nationale voting results",
   "author": "Léo Colombaro <git@colombaro.fr>",
   "license": "ISC",
   "repository": "https://github.com/LeoColomb/scrutin-scraper/tree/master/packages/cli",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "cli-table": "^0.3.1",
+    "csv-stringify": "^4.3.1",
     "meow": "^5.0.0",
     "scrutin-scraper": "^1.0.2"
   },

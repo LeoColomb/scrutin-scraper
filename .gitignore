@@ -6,4 +6,11 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Packages
 node_modules/
+
+# Testing
+coverage/
+
+# Production
+build/
