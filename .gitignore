@@ -8,6 +8,7 @@ yarn-error.log*
 
 # Packages
 node_modules/
+/package-lock.json
 
 # Testing
 coverage/
