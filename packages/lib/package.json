@@ -1,6 +1,6 @@
 {
   "name": "scrutin-scraper",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Scraping French Assemblée Nationale voting results",
   "author": "Léo Colombaro <git@colombaro.fr>",
   "license": "ISC",
