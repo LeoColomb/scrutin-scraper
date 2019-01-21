@@ -4,7 +4,11 @@
   "description": "Scraping French Assemblée Nationale voting results",
   "author": "Léo Colombaro <git@colombaro.fr>",
   "license": "ISC",
-  "repository": "https://github.com/LeoColomb/scrutin-scraper/tree/master/packages/lib",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/LeoColomb/scrutin-scraper.git",
+    "directory": "packages/lib"
+  },
   "main": "index.js",
   "scripts": {
     "test": "ava",
