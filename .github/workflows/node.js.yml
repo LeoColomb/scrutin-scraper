@@ -10,18 +10,30 @@ on: [push]
 
 jobs:
   build:
+    name: Node.js ${{ matrix.node_version }}
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node_version: [12]
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        version: 12
-    - name: npm install, build, and test
-      run: |
-        npm install
-        npm run build --if-present
-        npm test
+      - uses: actions/checkout@v1
+
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: actions/setup-node@v1
+        with:
+          version: ${{ matrix.node_version }}
+
+      - name: Install
+        run: cd frontend/ && npm install
+
+      - name: Lint
+        run: cd frontend/ && npm run lint --if-present
+
+      - name: Build
+        run: cd frontend/ && npm run build --if-present
+
+      - name: Test
+        run: cd frontend/ && npm run test --if-present
 
 #   publish-npm:
 #     needs: build
