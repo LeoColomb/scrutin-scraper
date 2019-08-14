@@ -3,7 +3,7 @@
 > Scraping French _Assemblée Nationale_ voting results
 
 [![npm version](https://img.shields.io/npm/v/scrutin-scraper.svg)](https://www.npmjs.org/package/scrutin-scraper)
-[![Build Status](https://travis-ci.com/LeoColomb/scrutin-scraper.svg?branch=master)](https://travis-ci.com/LeoColomb/scrutin-scraper)
+[![Build Status](https://action-badges.now.sh/LeoColomb/scrutin-scraper)](https://github.com/LeoColomb/scrutin-scraper/actions)
 
 ## Scrutin Scraper
 
