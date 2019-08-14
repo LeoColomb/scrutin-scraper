@@ -24,16 +24,16 @@ jobs:
           version: ${{ matrix.node_version }}
 
       - name: Install
-        run: cd frontend/ && npm install
+        run: npm install
 
       - name: Lint
-        run: cd frontend/ && npm run lint --if-present
+        run: npm run lint --if-present
 
       - name: Build
-        run: cd frontend/ && npm run build --if-present
+        run: npm run build --if-present
 
       - name: Test
-        run: cd frontend/ && npm run test --if-present
+        run: npm run test --if-present
 
 #   publish-npm:
 #     needs: build
