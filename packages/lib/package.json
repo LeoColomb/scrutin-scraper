@@ -20,6 +20,6 @@
   },
   "devDependencies": {
     "ava": "^2.0.0",
-    "standard": "^13.0.0"
+    "standard": "^14.0.0"
   }
 }
